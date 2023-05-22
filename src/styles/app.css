@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Dekko", cursive;
 }
 
 .main {
@@ -36,11 +37,10 @@
 }
 
 .formContent label{
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: bold;
     letter-spacing: 5px;
     text-transform: uppercase;
-    font-family: "Dekko", cursive;
 }
 
 .formContent input {
@@ -48,7 +48,6 @@
     height: 25px;
     font-size: medium;
     text-align: center;
-    font-family: "Poppins", sans-serif;
 }
 
 .formContent button {
@@ -56,7 +55,6 @@
     height: 25px;
     font-size: medium;
     text-align: center;
-    font-family: "Dekko", cursive;
     cursor: pointer;
     margin-bottom: 20px;
 }
@@ -72,12 +70,26 @@
 
 .listContainer h2 {
     font-size: x-large;
-    font-family: "Dekko", cursive;
+}
+
+.listContainer hr {
+    width: 60%;
+    border: 0;
+    height: 1px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+} 
+
+.listContainer label {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
 }
 
 .listContainer li {
     list-style-type: none;
-    font-family: "Poppins", sans-serif;
-    font-style: italic;
-    font-size: medium;
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
 }
