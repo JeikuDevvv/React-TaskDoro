@@ -1,9 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./styles/app.css";
 
 export default function App() {
   const [newTask, setNewTask] = useState("");
-  const [task, setTask] = useState([]);
+  const [task, setTask] = useState(() => {
+    const localValue = localStorage.getItem("ITEMS");
+    if (localValue == null) return [];
+
+    return JSON.parse(localValue);
+  });
+
+  useEffect(() => {
+    localStorage.setItem("ITEMS", JSON.stringify(task));
+  }, [task]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
