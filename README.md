@@ -1,6 +1,33 @@
 <div align="center">
-    <img alt="pomoDuro" src="./src/assets/res/icons/tomato.png" height='100'/>
-    <h1>TASKDORO</h1>
-    <p>Maximize Your Productivity with TaskDoro!<br>The Ultimate Pomodoro and Todo List Companion!</p>
-        <a target="blank" rel="noopener noreferrer" href="https://github.com/JeikuDevvv/react-todolist"><img src="./src/assets/res/preview/screenshoot1.png" height='512' alt="pomoDuro">
-    </a>
+  <h1>couple_keep</h1>
+
+![couple_keep](https://user-images.githubusercontent.com/79712099/131660928-3e58eaec-ac2f-498a-bb54-7ac0059c2a33.png)
+
+[![python](https://img.shields.io/badge/Made_with-Python-be9ace?labelColor=23261f&logo=python&logoColor=be9ace)](https://python.org)
+[![python](https://img.shields.io/badge/Made_with-PyQt5-be9ace?labelColor=23261f&logo=python&logoColor=be9ace)](https://python.org)
+[![python](https://img.shields.io/badge/License-GPL3-be9ace?labelColor=23261f&logo=gnu&logoColor=be9ace)](https://python.org)
+
+</div>
+
+## Setting up
+
+### Unix-like
+
+```sh
+# Git clone the repo. Note: You do need your Personal Access Token for this, otherwise simply download the zip file.
+git clone https://<Token>@github.com/Lourenceee/couple_keep.git
+
+# Create a virtual environment
+python3 -m venv venv (or env)
+
+# Install the dependencies.
+pip3 install -r requirements.txt
+
+# Setup mysql server
+mysql -u <user> -p
+CREATE DATABASE couple_keep_db
+
+# Run the program
+chmod +x main.py
+python3 main.py
+```
